@@ -218,35 +218,48 @@ client.on("message", message => {
  if (message.content === "-help-admin") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
-      .setColor("#000000")
+
+  .setColor("#000000")
       .setDescription(`
 	      اوامر ادارة السيرفر
 ❖-move @user ~  لسحب الشخص الى روومك
+
 ❖-bc ~ رسالة جماعية الى كل اعضاء السيرفر
 ❖-role @user <rank> ~ لأعطاء رتبة لعضو معين
 ❖-roleremove @user <rank> ~ لازالة الرتبة من شخص معين
 ❖-role all <rank> ~ لأعطاء رتبة للجميع
+
 ❖-role humans <rank> ~ لأعطاء رتبة للاشخاص فقط
 ❖-role bots <rank> ~ لأعطاء رتبة لجميع البوتات
 ❖-hchannel ~ اخفاء الشات
 ❖-schannel ~ اضهار الشات المخفية
+
+
 ❖-clr <numbr> ~ مسح الشات بعدد
 ❖-clear ~ مسح الشات
 ❖-mute @user <reason> ~ اعطاء العضو ميوت لازم رتبة <Muted>
+
 ❖-unmute @user ~ لفك الميوت عن الشخص 
 ❖-kick @user <reason> ~ طرد الشخص من السيرفر
+
 ❖-ban @user <reason> ~ حضر الشخص من السيرفر
 ❖-mutechannel ~ تقفيل الشات
 ❖-unmutechannel ~ فتح الشات
+
 ❖-dc ~ مسح كل الرومات
+
+
 ❖-dr ~ <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات
 ❖-ct <name> ~ انشاء شات
 ❖-cv <name> ~ انشاء رووم فويس
 ❖-delet <name> ~ مسح الشات او الرووم فويس
+
 ❖-ccolors <number> ~ ينشا لك الوان مع كم الوان تبي
 `)
-   message.author.sendEmbed(embed)
-    
+
+  message.author.sendEmbed(embed)
+
+	 
    }
    }); 
 
@@ -255,20 +268,33 @@ client.on("message", message => {
  if (message.content === "-help-games") {
 	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
   const embed = new Discord.RichEmbed() 
-      .setColor("#000000")
+
+  .setColor("#000000")
       .setDescription(`
           اوامر الالعاب
 ❖-rps ~ حجر ورقة مقص
+
 ❖-speed ~ اسرع كتابة
+
 ❖-quas ~ اسئلة عامة
+
+
 ❖-نكت ~ نكت 
+
 ❖-لعبة فكك ~ فكك
+
 ❖-عواصم عشوائية ~ عواصم
+
 ❖-لعبة كت تويت ~ كت تويت
+
 ❖-roll <number> ~ قرعة
+
 ❖-لو خيروك بطريقة حلوة ~ لو خيروك
+
 ❖-لعبة مريم ~ مريم
+
 ❖-فوائد ونصائح  ~ هل تعلم
+
 ❖-يعطيك عقابات قاسية ~ عقاب   `)
    message.author.sendEmbed(embed)
     
