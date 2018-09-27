@@ -162,8 +162,6 @@ ${prefix}help-admin ⇏ اوامر ادارة السيرفر
 			 
 ${prefix}help-games ⇏ اوامر الالعاب
 
-${prefix}help-music ⇏ اوامر الموسيقى
-
 	  `)
    message.channel.sendEmbed(embed)
     
@@ -276,28 +274,6 @@ client.on("message", message => {
    }
    }); 
 			  
-client.on("message", message => {
-	var prefix = "-";
- if (message.content === "-help-music") {
-	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
-  const embed = new Discord.RichEmbed() 
-      .setColor("#000000")
-      .setDescription(`
-	        اوامر الموسيقى 
-❖${prefix}play ~ لتشغيل أغنية برآبط أو بأسم
-❖${prefix}skip ~ لتجآوز الأغنية الحآلية
-❖${prefix}pause ~ إيقآف الأغنية مؤقتا
-❖${prefix}resume ~ لموآصلة الإغنية بعد إيقآفهآ مؤقتا
-❖${prefix}vol ~ لتغيير درجة الصوت 100 - 0
-❖${prefix}stop ~ لإخرآج البوت من الروم
-❖${prefix}np ~ لمعرفة الأغنية المشغلة حآليا
-❖${prefix}queue ~ لمعرفة قآئمة التشغيل
-
- `)
-   message.author.sendEmbed(embed)
-    
-   }
-   }); 
 
 client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
